@@ -6,15 +6,22 @@
   padding: 0;
 }
 
+.carousel-container > .default-content-wrapper:empty {
+  display: none;
+}
+
+/* When the carousel has 2+ cards, collapse the left column and let the carousel span full width */
+.carousel-container:has(.carousel-wrapper .carousel > ul > li:nth-child(2)) > .default-content-wrapper {
+  display: none;
+}
+.carousel-container:has(.carousel-wrapper .carousel > ul > li:nth-child(2)) > .carousel-wrapper {
+  flex: 1;
+}
+
 .carousel-container > .default-content-wrapper {
   flex: 1;
   padding: 0;
 }
-
-
-
-
-
 
 .carousel-container > .default-content-wrapper > p {
   margin: 0;
