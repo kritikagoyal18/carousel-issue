@@ -14,11 +14,10 @@
   max-width: initial;
 }
 .carousel-container .carousel-wrapper .carousel {
-  padding: 0;
+  padding: 5%;
   position: relative;
 }
 .carousel-container .carousel-wrapper .carousel > ul {
-  display: flex !important;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,9 +27,6 @@
   flex: 1;
   gap: 30px;
   padding: 10px 0px;
-  justify-content: flex-start;
-  align-items: stretch;
-  overflow: hidden;
 }
 .carousel-container .carousel-wrapper .carousel > ul > li {
   display: inline-flex;
@@ -83,10 +79,9 @@
 
 /* Card Generic Styles*/
 .carousel > ul {
-  display: flex !important;
+  display: flex;
   gap: 20px;
   padding: 10px 0;
-  justify-content: flex-start;
 }
 .carousel > ul > li {
   background: var(--background-color) 0 0 no-repeat padding-box;
